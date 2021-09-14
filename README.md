@@ -1,2 +1,1 @@
-# Proyecto-Dicure
-Proyectos de Biodiseño - Grupo 2
+# Proyectos-de-Biodise-o-Grupo-2
