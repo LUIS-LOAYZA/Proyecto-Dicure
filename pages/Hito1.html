@@ -10,11 +10,39 @@ Licence URI: https://www.os-templates.com/template-terms
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-<title>Sislaf | Pages | Basic Grid</title>
+<title>Discure | Hito1</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style type="text/css">
+/*Acordion*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 0px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.panel-content{
+  padding: 0 18px;
+
+}
 /* DEMO ONLY */
 .container .demo{text-align:center;}
 .container .demo div{padding:8px 0;}
@@ -136,36 +164,62 @@ Licence URI: https://www.os-templates.com/template-terms
         <p class="heading">Hito 1</p>
     </div>
     <div class="content"> 
-      <!-- ################################################################################################ -->
-      <h2 class="font-x2">1. Contexto</h2>
-      <img class="imgr borderedbox inspace-5" src="../images/Hito 1/Contexto.jpg" alt="">
-      <p class="font-x4">La retinopatía en infantes significa un problema grave de salud pública, ya que representa un porcentaje alto de complicaciones en la vista y en el peor de los casos puede provocar 
-        ceguera, limitando en diversos ámbitos la vida del menor. La causa principal de la retinopatía se debe a un parto prematuro y que el recién nacido sea expuesto a ventilación mecánica, y 
-        que llegue a complicarse en un porcentaje elevado se debe principalmente a la detección tardía de la enfermedad. En el año 2010 se reportó una incidencia de 6 a 18% de casos de discapacidad 
-        visual atribuida a retinopatía de la prematuridad, de un total de aproximadamente 19 millones de pacientes pediátricos en el mundo [1]. En Latinoamérica, en el año 2011 se reportó que la 
-        prevalencia de retinopatía de la prematuridad oscilaba entre 6,6 y 82%, incluyendo todos los estadios y la prevalencia de retinopatía severa variaba entre 1,2 y 25% [2] [3]. Por otro lado, 
-        es importante señalar que, a nivel nacional, un estudio realizado en el Instituto Nacional Materno Perinatal, que incluyó recién nacidos con peso inferior a 1500 gramos, reportó 70,5% de 
-        incidencia y fue más probable en prematuros con menor peso como se muestra en la Fig. 1, y esta enfermedad es la principal causa de ceguera infantil en el Perú [5].</p>
+      <!-- Contexto -->
+      <button class="accordion"><h2 class="font-x2">1. Contexto</h2></button>
+      <div class="panel">
         <br/>
         <br/>
-      <h2 class="font-x2">2. Definición del problema</h2>
-        <p class="font-x4">Entender lo que la retinopatía en prematuros ocasiona en las personas que lo padecen es importante para solucionar ese problema. 
-          Así, en la Fig. 2 se muestra una explicación acerca de qué consiste esta enfermedad y los problemas que ocasiona</p>
+        <img class="imgr borderedbox inspace-5" src="../images/Hito 1/Contexto.png" alt="">
+        <p class="font-x4">La retinopatía en infantes significa un problema grave de salud pública, ya que representa un porcentaje alto de complicaciones en la vista y en el peor de los casos puede provocar 
+          ceguera, limitando en diversos ámbitos la vida del menor. La causa principal de la retinopatía se debe a un parto prematuro y que el recién nacido sea expuesto a ventilación mecánica, y 
+          que llegue a complicarse en un porcentaje elevado se debe principalmente a la detección tardía de la enfermedad. En el año 2010 se reportó una incidencia de 6 a 18% de casos de discapacidad 
+          visual atribuida a retinopatía de la prematuridad, de un total de aproximadamente 19 millones de pacientes pediátricos en el mundo [1]. En Latinoamérica, en el año 2011 se reportó que la 
+          prevalencia de retinopatía de la prematuridad oscilaba entre 6,6 y 82%, incluyendo todos los estadios y la prevalencia de retinopatía severa variaba entre 1,2 y 25% [2] [3]. Por otro lado, 
+          es importante señalar que, a nivel nacional, un estudio realizado en el Instituto Nacional Materno Perinatal, que incluyó recién nacidos con peso inferior a 1500 gramos, reportó 70,5% de 
+          incidencia y fue más probable en prematuros con menor peso como se muestra en la Fig. 1, y esta enfermedad es la principal causa de ceguera infantil en el Perú [5].</p> 
+        <br/>
+        <br/>
+      </div>
+      <!-- Definicion de problema -->
+      <button class="accordion"><h2 class="font-x2">2.Definición del problema</h2></button>
+      <div class="panel">
+        <div class="panel-content">
+          <p class="font-x4"></p>
+        </div>
+          
+        <!-- 2.1 -->
+        <button class="accordion"><h2 class="font-x2">2.1 State Problem</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
           <br/>
-          <div class="content"> 
-              <img class="img borderedbox inspace-5" src="../images/Hito 1/Definicion-Problema.jpeg" alt="">
-              <p><b>Figura 2.</b> Retinopatía en prematuros y su alcance</p>
+          <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Definicion-Problema.png" alt="">
           </div>
+        </div>
+        <!-- 2.2-->
+        <button class="accordion"><h2 class="font-x2">2.2 Mapa de empatia</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/MapaEmpatia1.png" alt="">
+            <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/MapaEmpatia2.png" alt="">
+          </div>
+        </div>
+        <!-- 2.3-->
+        <button class="accordion"><h2 class="font-x2">2.3 Mapa de stakeholders</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Stakeholders.png" alt="">
+            
+          </div>
+        </div>
         <br/>
-        <p class="font-x4">Una vez identificado los diversos aspectos a considerar, se tiene que analizar las necesidades y problemas que tienen los pacientes y las personas de su alrededor. 
-          por lo que es importante para la presente investigación considerar el punto de vista del usuario. En el anexo A.2 se muestra una explicación del análisis realizado a los familiares de 
-          los pacientes que padecen de ROP, en el cual se observa que los familiares del prematuro en su mayoría sienten angustia debido a las complicaciones que puede presentar la retinopatía 
-          considerando que en nuestro país se cuenta con pocos especialistas capacitados para realizar el examen de fondo de ojo en prematuros (método de diagnóstico) y brindar el tratamiento 
-          necesario para esta enfermedad. Adicionalmente, existen pocos centros especializados en oftalmología y estos se encuentran en la ciudad de Lima por lo que aquellos pacientes que residen en 
-          provincias realizan gastos adicionales pues requieren viajar para recibir la atención necesaria.</p>
         <br/>
-        <br/>
-      <h2 class="font-x2">3. Análisis de los efectos y sus impactos</h2>
+      </div>
+      <!-- Analisis EFECTOS E IMPACTOS -->
+      <button class="accordion"><h2 class="font-x2">3.Análisis de los efectos y sus impactos</h2></button>
+      <div class="panel">
         <p class="font-x4">La retinopatía del prematuro (ROP) es una patología que produce un crecimiento anormal de los vasos sanguíneos en la retina (la capa de tejido nervioso del ojo que nos 
           permite ver), puede llevar al deterioro de la visión e incluso en casos más severos la ceguera a temprana edad, cabe recalcar que el 80% de casos de ceguera prevenible es por causa de la retinopatía [4].
           En América Latina, de 4,1% a 38% de bebés diagnosticados con ROP desarrollan discapacidad visual . La discapacidad visual causada por ROP puede producir retrasos en el desarrollo 
@@ -176,21 +230,24 @@ Licence URI: https://www.os-templates.com/template-terms
           Uno de los principales efectos es en la rama de la economía, la ceguera a tan temprana edad produce profundas consecuencias socioeconómicas en todas las sociedades, esto debido a que se 
           presenta junta a una baja participación en el mercado laboral y una baja productividad, un niño con impedimento visual necesita asistencia especializada tanto en salud como educación y 
           no tiene la oportunidad de ser económicamente activo en el futuro. El costo de la pérdida de productividad, rehabilitación y educación de los ciegos son muy altas, un estudio indica que 
-          el costo por discapacidad visual causa 410.700 millones de dólares de pérdida de productividad al año, presentándose como un problema hacia el PBI nacional.</p>
-
+          el costo por discapacidad visual causa 410.700 millones de dólares de pérdida de productividad al año, presentándose como un problema hacia el PBI nacional.
+        </p>
       <br/>
-      <br/>
-      <h2 class="font-x2">4.Análisis de las causas y sus factores</h2>
-        <p class="font-x4">      </p>
-      <br/>
-      <h2 class="font-x2">5.Descripción de la propuesta de solución</h2>
-        <p class="font-x4">Breve descripción sobre la propuesta de solución. Esta propuesta se ira ajustando conforme el grupo defina mejor la solución. Un ejemplo de propuesta de solución sería:
-          “En el presente trabajo de investigación se diseñará conceptualmente un sistema de seguridad genérico para brazos robóticos adaptable a los contextos de aplicación: traslado de materiales,
-          soldadura y ensamble de piezas. Este sistema contará con una interfaz que permita mostrar su estado respecto a la condición de alarma o corte de emergencia. Adicionalmente, el diseño del 
-          sistema de protección cumplirá las normas y estándares locales e internacionales; sin embargo, no contemplará la seguridad de las personas u objetos que ingresen a la zona de seguridad por 
-          sobre la altura de los dos metros y medio.”
-          </p>
+      <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Efectos.jpeg" alt="">
       
+      </div>
+      <!-- Analisis CAUSAS Y FACTORES -->
+      <button class="accordion"><h2 class="font-x2">4.Análisis de las causas y sus factores</h2></button>
+      <div class="panel">        
+        <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Causas.jpeg" alt="">
+      </div>
+      <!-- PROPUESTA DE SOLUCION -->
+      <button class="accordion"><h2 class="font-x2">5.Descripción de la propuesta de solución</h2></button>
+      <div class="panel">
+        <p class="font-x4">   </p>
+      </div>
+
+      <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
     </div>
     <!-- ################################################################################################ -->
@@ -198,124 +255,3 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="clear"></div>
   </main>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="bgded overlay row4" style="background-image:url('../images/Pagina-principal/Imagen-Contactanos.jpeg');">
-  <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="center btmspace-50">
-      <h6 class="heading">Sislaf</h6>
-      <ul class="faico clear">
-        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
-        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-      </ul>
-      <p class="nospace">Pellentesque ante integer mollis risus vitae condimentum vulputate elit.</p>
-    </div>
-    <!-- ################################################################################################ -->
-    <hr class="btmspace-50">
-    <!-- ################################################################################################ -->
-    <div class="group btmspace-50">
-      <div class="one_quarter first">
-        <h6 class="heading">Erat adipiscing metus</h6>
-        <p class="nospace btmspace-15">Mi etiam ac enim quis risus hendrerit ullamcorper nam faucibus lectus eget.</p>
-        <form method="post" action="#">
-          <fieldset>
-            <legend>Newsletter:</legend>
-            <input class="btmspace-15" type="text" value="" placeholder="Name">
-            <input class="btmspace-15" type="text" value="" placeholder="Email">
-            <button type="submit" value="submit">Submit</button>
-          </fieldset>
-        </form>
-      </div>
-      <div class="one_quarter">
-        <h6 class="heading">Auctor tellus diam</h6>
-        <ul class="nospace linklist">
-          <li>
-            <article>
-              <p class="nospace btmspace-10"><a href="#">Mauris nam odio dui vestibulum a molestie ac pulvinar a tellus donec nisi dui.</a></p>
-              <time class="block font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            </article>
-          </li>
-          <li>
-            <article>
-              <p class="nospace btmspace-10"><a href="#">Mattis ipsum ut leo ut elementum odio sed tellus quisque malesuada bibendum.</a></p>
-              <time class="block font-xs" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            </article>
-          </li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="heading">Laoreet non sodales</h6>
-        <ul class="nospace linklist">
-          <li><a href="#">Amet blandit non quam quisque</a></li>
-          <li><a href="#">Cursus faucibus nulla in mauris</a></li>
-          <li><a href="#">Libero interdum quis molestie</a></li>
-          <li><a href="#">Ut convallis non felis mauris</a></li>
-          <li><a href="#">Volutpat consequat nibh aenean</a></li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="heading">Aliquam mollis tortor</h6>
-        <ul class="nospace clear latestimg">
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-          <li><a class="imgover" href="#"><img src="../images/demo/100x100.png" alt=""></a></li>
-        </ul>
-      </div>
-      <!-- ################################################################################################ -->
-    </div>
-    <div id="ctdetails" class="clear">
-      <ul class="nospace clear">
-        <li class="one_quarter first">
-          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
-        </li>
-        <li class="one_quarter">
-          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> support@domain.com</span></div>
-        </li>
-        <li class="one_quarter">
-          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Saturday:</strong> 08.00am - 18.00pm</span></div>
-        </li>
-        <li class="one_quarter">
-          <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span></div>
-        </li>
-      </ul>
-    </div>
-    <!-- ################################################################################################ -->
-  </footer>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div>
-  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
-  <a id="backtotop" href="#top"><i class="fas far fa-life-ring"></i></a>
-  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
-</div>
-<!-- JAVASCRIPTS -->
-<script src="../layout/scripts/jquery.min.js"></script>
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-</body>
-</html>
