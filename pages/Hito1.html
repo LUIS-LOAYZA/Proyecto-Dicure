@@ -14,6 +14,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
 <style type="text/css">
 /*Acordion*/
 .accordion {
@@ -50,7 +51,27 @@ Licence URI: https://www.os-templates.com/template-terms
 .container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
 @media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
 /* DEMO ONLY */
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 25%;
+  height: 35px;
+  background-color: #FBAB45;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.text-in-progress-bar {
+  font-size: 19px;
+  padding-top: 2px !important;
+}
 </style>
+
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -165,18 +186,92 @@ Licence URI: https://www.os-templates.com/template-terms
     </div>
     <div class="content"> 
       <!-- Contexto -->
-      <button class="accordion"><h2 class="font-x2">1. Contexto</h2></button>
+      <button class="accordion"><h2 class="font-x2">1.Contexto</h2></button>
       <div class="panel">
-        <br/>
-        <br/>
-        <img class="imgr borderedbox inspace-5" src="../images/Hito 1/Contexto.png" alt="">
-        <p class="font-x4">La retinopatía en infantes significa un problema grave de salud pública, ya que representa un porcentaje alto de complicaciones en la vista y en el peor de los casos puede provocar 
-          ceguera, limitando en diversos ámbitos la vida del menor. La causa principal de la retinopatía se debe a un parto prematuro y que el recién nacido sea expuesto a ventilación mecánica, y 
-          que llegue a complicarse en un porcentaje elevado se debe principalmente a la detección tardía de la enfermedad. En el año 2010 se reportó una incidencia de 6 a 18% de casos de discapacidad 
-          visual atribuida a retinopatía de la prematuridad, de un total de aproximadamente 19 millones de pacientes pediátricos en el mundo [1]. En Latinoamérica, en el año 2011 se reportó que la 
-          prevalencia de retinopatía de la prematuridad oscilaba entre 6,6 y 82%, incluyendo todos los estadios y la prevalencia de retinopatía severa variaba entre 1,2 y 25% [2] [3]. Por otro lado, 
-          es importante señalar que, a nivel nacional, un estudio realizado en el Instituto Nacional Materno Perinatal, que incluyó recién nacidos con peso inferior a 1500 gramos, reportó 70,5% de 
-          incidencia y fue más probable en prematuros con menor peso como se muestra en la Fig. 1, y esta enfermedad es la principal causa de ceguera infantil en el Perú [5].</p> 
+        <!-- MUNDIAL -->
+        <button class="accordion"><h2 class="font-x2">1.1.Nivel mundial</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+          <br/>
+          <br/>
+          <ul id="stats" class="nospace group">
+            <li><i class="fas fa-globe"></i>
+              <p style="margin-bottom: 4px;"><a href="#"></a></p>
+              <div id="myProgress" style="margin-bottom: 18px;">
+                <div id="myBar"> <div class="text-in-progress-bar">6.66%</div> </div>
+              </div>
+              <p>De niños prematuros a nivel mundial mueren con retinopatía</p>
+            </li>
+
+            <li>
+              <img src="../images/Hito 1/Mundial1.png" alt="" style="width:100%;max-width:115px;height:100%;max-height:115px;margin-bottom: 16px;">
+              <p style="margin-bottom: 13px;"><a href="#">Primera</a></p>
+              <p>Causa de ceguera infantil</p>
+            </li>
+            <li>
+              <img src="../images/Hito 1/Mundial2.png" alt="" style="width:100%;max-width:115px;height:100%;max-height:115px;margin-bottom: 16px;">
+              <p style="margin-bottom: 13px;"><a href="#">Segunda</a></p>
+              <p>Causa mortalidad infantil a nivel mundial</p>
+            </li>
+                 
+          </ul>
+          <br/>
+          <br/>
+          </div>
+        </div>
+        <!-- LATINOAMERICA -->
+        <button class="accordion"><h2 class="font-x2">1.2.Nivel de Latinoamérica</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+          <br/>
+          <ul id="stats" class="nospace group">
+            <li><i class="fas fa-globe"></i>
+              <p><a href="#">6.6-82%,</a></p>
+              <p>Oscila la prevalencia de retinopatía en la prematuridad</p>
+            </li>
+            <li><i class="fas fa-ambulance"></i>
+              <p><a href="#">1.2-25%</a></p>
+              <p>Varia la prevalencia de retinopatía severa</p>
+            </li>
+            
+          </ul>
+          </div>
+        </div>
+        <!-- NACIONAL -->
+        <button class="accordion"><h2 class="font-x2">1.3.Nivel Nacional</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+          <br/>
+          <ul id="stats" class="nospace group">
+            <li>
+              <img src="../images/Hito 1/Nacional1.png" alt="" style="width:100%;max-width:115px;height:100%;max-height:115px;margin-bottom: 16px;">
+              <p style="margin-bottom: 13px;"><a href="#">Muertes</a></p>
+              <p>Cada 1000 infantes recién nacidos</p>
+            </li>
+            <li>
+              <img src="../images/Hito 1/Nacional2.png" alt="" style="width:100%;max-width:115px;height:100%;max-height:115px;margin-bottom: 16px;">
+              <p style="margin-bottom: 13px;"><a href="#">Causadas</a></p>
+              <p>Por retinopatía</p>
+            </li>
+            <li>
+              <img src="../images/Hito 1/Nacional3.png" alt="" style="width:100%;max-width:115px;height:100%;max-height:115px;margin-bottom: 16px;">
+              <p style="margin-bottom: 13px;"><a href="#">Principal</a></p>
+              <p>Causa de ceguera infantil en el Perú</p>
+            </li>
+            <li><i class="fas fa-globe"></i>
+              <p style="margin-bottom: 4px;"><a href="#"></a></p>
+              <div id="myProgress" style="margin-bottom: 18px;">
+                <div id="myBar"> <div class="text-in-progress-bar">70.5%</div> </div>
+              </div>
+              <p>De niños prematuros a nivel mundial mueren con retinopatía</p>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <p class="font-x4"></p> 
         <br/>
         <br/>
       </div>
@@ -187,7 +282,7 @@ Licence URI: https://www.os-templates.com/template-terms
           <p class="font-x4"></p>
         </div>
           
-        <!-- 2.1 -->
+        <!-- State Problem -->
         <button class="accordion"><h2 class="font-x2">2.1 State Problem</h2></button>
         <div class="panel">
           <div class="panel-content">
@@ -196,7 +291,7 @@ Licence URI: https://www.os-templates.com/template-terms
           <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Definicion-Problema.png" alt="">
           </div>
         </div>
-        <!-- 2.2-->
+        <!-- Mapa de Empatia-->
         <button class="accordion"><h2 class="font-x2">2.2 Mapa de empatia</h2></button>
         <div class="panel">
           <div class="panel-content">
@@ -205,11 +300,12 @@ Licence URI: https://www.os-templates.com/template-terms
             <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/MapaEmpatia2.png" alt="">
           </div>
         </div>
-        <!-- 2.3-->
+        <!-- StakeHolders-->
         <button class="accordion"><h2 class="font-x2">2.3 Mapa de stakeholders</h2></button>
         <div class="panel">
           <div class="panel-content">
             <p class="font-x4"></p>
+            
             <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Stakeholders.png" alt="">
             
           </div>
@@ -220,17 +316,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <!-- Analisis EFECTOS E IMPACTOS -->
       <button class="accordion"><h2 class="font-x2">3.Análisis de los efectos y sus impactos</h2></button>
       <div class="panel">
-        <p class="font-x4">La retinopatía del prematuro (ROP) es una patología que produce un crecimiento anormal de los vasos sanguíneos en la retina (la capa de tejido nervioso del ojo que nos 
-          permite ver), puede llevar al deterioro de la visión e incluso en casos más severos la ceguera a temprana edad, cabe recalcar que el 80% de casos de ceguera prevenible es por causa de la retinopatía [4].
-          En América Latina, de 4,1% a 38% de bebés diagnosticados con ROP desarrollan discapacidad visual . La discapacidad visual causada por ROP puede producir retrasos en el desarrollo 
-          cognitivo, emocional, motor y lingüístico del niño, asimismo se observa un bajo rendimiento académico , esto presenta una gran problemática de diversas ramas, produciendo un impacto 
-          emocional, en la economía, en la sociedad y en el bienestar propio del que la padece.
-          Se presentan diversas manifestaciones sociales alrededor de la discapacidad visual, el afectado tiene la posibilidad de presentar trastornos de ansiedad, trastornos de estado de ánimo y 
-          depresión; a su vez la condición de discapacidad genera en este un problema de dependencia e introversión hacia otras personas, limitando su desarrollo autónomo y su desenvolvimiento en la sociedad [8].
-          Uno de los principales efectos es en la rama de la economía, la ceguera a tan temprana edad produce profundas consecuencias socioeconómicas en todas las sociedades, esto debido a que se 
-          presenta junta a una baja participación en el mercado laboral y una baja productividad, un niño con impedimento visual necesita asistencia especializada tanto en salud como educación y 
-          no tiene la oportunidad de ser económicamente activo en el futuro. El costo de la pérdida de productividad, rehabilitación y educación de los ciegos son muy altas, un estudio indica que 
-          el costo por discapacidad visual causa 410.700 millones de dólares de pérdida de productividad al año, presentándose como un problema hacia el PBI nacional.
+        <p class="font-x4">
         </p>
       <br/>
       <img style="width:100%;max-width:1140px;" class="img" src="../images/Hito 1/Efectos.jpeg" alt="">
@@ -244,12 +330,13 @@ Licence URI: https://www.os-templates.com/template-terms
       <!-- PROPUESTA DE SOLUCION -->
       <button class="accordion"><h2 class="font-x2">5.Descripción de la propuesta de solución</h2></button>
       <div class="panel">
-        <p class="font-x4">   </p>
+        <p class="font-x4"> </p>
       </div>
 
       <!-- ################################################################################################ -->
       <!-- ################################################################################################ -->
     </div>
+
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
@@ -318,9 +405,12 @@ Licence URI: https://www.os-templates.com/template-terms
   <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 </div>
 <!-- JAVASCRIPTS -->
+
+
 <script src="../layout/scripts/jquery.min.js"></script>
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
