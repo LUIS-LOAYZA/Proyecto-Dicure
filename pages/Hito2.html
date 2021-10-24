@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--
+Template Name: Sislaf
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Discure | Hito2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<style type="text/css">
+/*Acordion*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 0px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.panel-content{
+  padding: 0 18px;
+
+}
+/* DEMO ONLY */
+.container .demo{text-align:center;}
+.container .demo div{padding:8px 0;}
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+/* DEMO ONLY */
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 25%;
+  height: 35px;
+  background-color: #FBAB45;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.text-in-progress-bar {
+  font-size: 19px;
+  padding-top: 2px !important;
+}
+
+/*Fin Acordion*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* lista*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../images/Pagina-principal/Imagen-Principal.png');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+          <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+      <div class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+          <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+          <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+          <li id="searchform">
+            <div>
+              <form action="#" method="post">
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search term&hellip;">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="../index.html">Discure</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><a href="../index.html">Página principal</a></li>
+          <li><a class="drop" href="Proyecto.html">Proyecto</a>
+            <ul>
+              <li><a class="drop" href="../pages/Caso-Clinico.html">Caso clínico</a>
+                <ul>
+                  <li><a href="../pages/Caso-Clinico.html">¿Qué es?</a></li>
+                  <li><a href="../pages/Caso-Clinico.html">Tratamiento</a></li>
+                  <li><a href="../pages/Proyecto.html">Proyecto</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/Hito1.html">Hito1</a></li>
+              <li><a href="../pages/Hito2.html">Hito2</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="#">Contactanos</a>
+            <ul>
+              <li><a href="pages/gallery.html">PUCP</a></li>
+              <li><a href="pages/full-width.html">UPCH</a></li>
+              <li><a href="pages/sidebar-left.html">NOSOTROS</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Hito 2</h6>
+    <ul>
+      <li><a href="../index.html">Página principal</a></li>
+      <li><a href="../pages/Proyecto.html">Proyecto</a></li>
+      <li><a href="../pages/Hito2.html">Hito1</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <div class="sectiontitle">
+        <p class="heading underline font-x3">Definicion</p>
+        <br/>
+        <br/>
+        <p class="heading">Hito 2</p>
+    </div>
+    <div class="content"> 
+      <!-- Estado del Arte -->
+      <button class="accordion"><h2 class="font-x2">1. Estado del Arte</h2></button>
+      <div class="panel">
+        <!-- Patentes -->
+        <button class="accordion"><h2 class="font-x2">1.1 Patentes y Trabajos de investigación</h2></button>
+        <div class="panel">
+          <br/>
+
+          <div class="wrapper row2">
+            <main class="hoc container clear"> 
+              <!-- ################################################################################################ -->
+              <!-- Patente 1 -->
+              <div class="content"> 
+                <img class="imgl borderedbox inspace-5"  src="../images/Hito 2/Patente 1.jpg" alt="">
+                <h2>SISTEMA DE ALARMA Y DETERMINACIÓN DE RETINOPATÍA DE LA PREMATURIDAD</h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">La presente patente se refiere a un dispositivo de monitorización de pacientes y, más en particular, a la técnica para determinar la probabilidad de una posible retinopatía del prematuro y alertar al cuidador de dicha probabilidad. La unidad de procesamiento está configurada para determinar si un historial de saturación de oxígeno del paciente coloca al paciente en riesgo de desarrollar retinopatía del prematuro. Si los parámetros indican una alta posibilidad de desarrollo de retinopatía en el paciente, se manifiesta una alarma audible o una alarma visual.
+                </p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 2 -->
+              <div class="content"> 
+                <h2>MÉTODO Y DISPOSITIVO DE DETECCIÓN DE RETINOPATÍA DE PREMATUROS BASADO EN RED NEURAL PROFUNDA</h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">La realización de la invención proporciona un método y un dispositivo para la detección de la retinopatía del prematuro (ROP) basado en una red neuronal profunda, perteneciente al campo del procesamiento de imágenes. El método comprende los pasos de: recopilar una pluralidad de datos de la imagen del fondo del ojo, realizar el marcado de la pluralidad de datos de la imagen del fondo del ojo en base a una regla preestablecida y generar datos de la imagen para procesar; dividir los datos de la imagen a procesar en un conjunto de entrenamiento y un conjunto de prueba de acuerdo con una proporción preestablecida; establecer un modelo de red neuronal profunda; entrenar el modelo de red neuronal profunda basado en el conjunto de entrenamiento; procesar los datos en el conjunto de prueba a través del modelo de red neuronal profunda entrenado para obtener datos de salida procesados; y finalmente, obtener un resultado de diagnóstico de ROP en base a los datos de salida.</p>
+              </div>
+              <br/>
+              <br/>
+
+              <!-- Patente 3 -->
+              <div class="content"> 
+                <img class="imgr borderedbox inspace-5"  src="../images/Hito 2/Patente 3.jpg" alt="">
+                <h2>MEJORA DE LA VISIBILIDAD DE LOS VASOS EN LAS IMÁGENES DEL FONDO DE OJO PARA AYUDAR AL DIAGNOSTICO DE RETINOPATIA DEL PREMATURO </h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">Este artículo presenta un método automatizado para procesar imágenes de fondo de ojo para mejorar la visibilidad de la red vascular. El método incluye varias tareas de procesamiento cuyos parámetros se predicen mediante una red neuronal artificial. En este trabajo se utilizó un conjunto de 88 imágenes clínicas. El desempeño de esta propuesta es eficiente y el tiempo promedio de procesamiento fue de 42 ms. El método se evaluó utilizando tanto el índice de mejora del contraste como las opiniones de expertos. El promedio del índice de mejora del contraste fue 2; esto significa que la imagen procesada mejoró con éxito su contraste.</p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 4 -->
+              <div class="content"> 
+                <h2>Métodos para detectar retinopatía en prematuros</h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">En el presente trabajo de investigación se plantean métodos para determinar el riesgo de un prematuro a desarrollar retinopatía grave mediante la detección del nivel de factor de crecimiento endotelial vascular (VEGF). Los niveles de VEGF en los bebés que no desarrollan una retinopatía grave generalmente disminuye entre las 32 y 40 semanas de edad posconceptual aproximadamente. Por otro lado, los bebés que desarrollan ROP grave presentan niveles de VEGF altos entre las semanas 36 y 37 de edad posconceptual.</p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 5 -->
+              <div class="content"> 
+                <img class="imgl borderedbox inspace-5"  src="../images/Hito 2/Patente 5.jpg" alt="">
+                <br/>
+                <br/>
+                <h2>PROTOTIPO DE CASCO Y SOPORTE PARA CÁMARAS DE SMARTPHONE Y CÁMARAS DE GRAN ANGULAR, PARA VIDEOS Y FOTOGRAFÍAS EN RETINOPATÍA DEL PREMATURO</h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">Prototipo combinando un arnés de casco del oftalmoscopio binocular indirecto con un trípode profesional flexible que permita regular la distancia de los ojos, de esta manera imita al oftalmoscopio binocular indirecto, el trípode va conectado a un soporte de celular que deje pasar la luz y la cámara del celular hacia el ojo, el médico usará este prototipo, se colocaría el casco que sostiene el smartphone y mira a través de la pantalla lo que busca con la lupa, en modo video o fotos repetitivas y de esta manera graba imágenes que se registran en el teléfono.</p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 6 -->
+              <div class="content"> 
+                <img class="imgr borderedbox inspace-5"  src="../images/Hito 2/Patente 6.jpg" alt="">
+                <h2>DISPOSITIVO DE EXAMEN DE FONDO DE OJO </h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">Dispositivo de examen de imagen de fondo de ojo comprende una cámara de fondo de ojo (Figura 6) y un terminal de examen (Figura 7), el terminal de examen comprende una pantalla de visualización que está conectada con una parte del anfitrión y se puede plegar al anfitrión, esta está provisto de un teclado, una ranura de colocación de la cámara tipo varilla, una interfaz de alimentación y varios puertos de conexión de datos. La cámara de fondo de ojo es una cámara de tipo varilla recta, una lente está colocada en el extremo frontal de la carcasa, y una estructura de iluminación, un juego de lentes, una estructura de enfoque y una batería están colocadas secuencialmente en el lado interno de la lente. El dispositivo de examen del fondo de ojo es de estructura simple y cómodo de operar, la eficiencia del examen del fondo de ojo ha mejorado enormemente y se proporciona un apoyo más garantizado para el tratamiento de enfermedades oculares.</p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 7 -->
+              <div class="content"> 
+                <img class="imgl borderedbox inspace-5"  src="../images/Hito 2/Patente 7.jpg" alt="">
+                <h2>DISPOSITIVO Y SISTEMA DE OFTALMOSCOPÍA INDIRECTA BINOCULAR PARA PRODUCIR RETINALES ERECTAS EN TIEMPO REAL </h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">La presente investigación proporciona un dispositivo y sistema digital que implementa oftalmología indirecta binocular para producir imágenes erectas reinvertidas y tridimensionales en tiempo real de la retina. Este dispositivo incluye al menos un sensor de cámara con una disposición óptica adecuada para crear imágenes de lado a lado o puede utilizar dos sensores de cámara separados a una distancia apropiada. Estos sensores se sincronizan utilizando un procesador  para producir imágenes o videos en tiempo real.</p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 8 -->
+              <div class="content"> 
+                <img class="imgr borderedbox inspace-5"  src="../images/Hito 2/Patente 8.jpg" alt="">
+                <h2>RETCAM </h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">Retcam para el diagnóstico de Retinopatía en prematuros. Se realizaron imágenes de Retcam y oftalmología indirecta en 43 prematuros. Se evaluaron las imágenes y compararon con los resultados de la oftalmología indirecta. El cribado y el tratamiento de la retinopatía del prematuro mediante imágenes RetCam no dejaron de detectar la enfermedad preumbral o umbral cuando se pudieron obtener las imágenes. Se necesitaron exámenes oftalmológicos en el 20% de los casos que no alcanzaron la enfermedad umbral o preumbral debido a la mala calidad de la imagen o la sobreestimación de la ROP.</p>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <!-- Patente 9 
+              <div class="content"> 
+                <img class="imgr borderedbox inspace-5"  src="../images/Caso-clinico/Que es.jpg" alt="">
+                <h2>Manuel Hernandez Lam </h2>
+                <br />
+                <p style="text-align: justify;" class="font-x4">Soy estudiante de tercer año de la carrera de Ingeniería Biomédica. Me considero una persona responsable, comprometido con sus labores, lo cual se necesita en un país como Perú 
+                  para mejorar las carencias del sistema de salud. Estoy interesado por la rama de Biomecánica y Rehabilitación, una rama que es deficiente en el Perú, y es necesario innovar.</p>
+              </div> 
+              -->
+            </main>
+          </div>
+        </div>
+        
+
+
+        <!-- Sistema comercial -->
+        <button class="accordion"><h2 class="font-x2">1.2 Sistema comercial</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <br/>
+            <br/>
+            <div class="content"> 
+              <img class="imgr borderedbox inspace-5"  src="../images/Hito 2/Sistema Comercial.jpg" alt="">
+              <h2>ITOS Mass Screening - Adquisición automatizada y diagnóstico automatizado de la retinopatía diabética </h2>
+              <p style="text-align: justify;" class="font-x4">Con el «Sistema Integrado Teleoftalmológico ITOS» de Voigtmann GmbH se pueden automatizar detecciones sistemáticas masivas para la rápida identificación de la retinopatía diabética. ITOS es un procedimiento rentable y efectivo que puede realizarse sin la participación de profesionales médicos, ya que se pueden tomar y analizar automáticamente fotografías del fondo del ojo de los pacientes en estaciones de detección sistemática distribuidas. En caso se encuentren indicios de una enfermedad de retina, se deriva al paciente a un centro oftalmológico. Esto permite una identificación descentralizada de los pacientes con necesidad de un tratamiento oftalmológico de un grupo de riesgo mucho mayor y de manera sencilla.</p>
+            </div>
+            <br/>
+            <br/>
+          </div>
+        </div>
+        <!-- Normativa -->
+        <button class="accordion"><h2 class="font-x2">1.3 Normativa</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <br/>
+            <div class="content"> 
+              <p style="text-align: justify;" class="font-x4">De acuerdos de los estudios que se han realizados, se han encontrado diversas normas para la creación de un dispositivo biomédico especializado en la detección de la retinopatía prematura, los cuales son los siguientes:</p>
+            </div>
+            <br/>
+            <br/>
+            <div class="content"> 
+              
+              <h2>1. NORMA TÉCNICA DE SALUD DE ATENCIÓN DEL RECIÉN NACIDO PRE TÉRMINO CON RIESGO DE RETINOPATÍA PREMATURA EN EL PERÚ.  </h2>
+              <p style="text-align: justify;" class="font-x4">En esta normativa, podemos observar que el único método que está aprobado para la detección de retinopatía prematura en el Perú es el del examen de fondo de ojo el cual debe ser realizado por un profesional de la salud especializado en la oftalmología.</p>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 2/Normativa Base legal.jpg" alt=""></p>
+            </div>
+            <br/>
+            <br/>
+            <div class="content">
+              <h2>2. ISO 13485</h2>
+              <p style="text-align: justify;" class="font-x4">Esta normativa de dispositivos biomédicos nos indica que el dispositivo debe contar con la implementación de un SGC (Sistema de Gestión de la Calidad) que cumpla con los requisitos de la norma y que se encuentre suficientemente documentado.</p>
+              <br/>
+              <p style="text-align: justify;" class="font-x4">ISO requiere que se documenten elementos como:</p>
+              <br/>
+              <p style="text-align: justify;" class="font-x4"><b>Política y objetivos de calidad:</b>se debe recoger por escrito no solo el compromiso con la calidad, sino también el detalle de cómo se van a alcanzar los objetivos.</p>
+              <br/>
+              <p style="text-align: justify;" class="font-x4"><b>Manual de calidad:</b> debe incluir el alcance del Sistema de Gestión y los procedimientos de calidad documentados.</p>
+              <br/>
+              <p style="text-align: justify;" class="font-x4"><b>Procedimiento de validación del software:</b> se exige que los fabricantes de dispositivos médicos validen cualquier software utilizado para el diseño, fabricación, empaquetado, almacenamiento, instalación y suministro de productos terminados.</p>
+              <br/>
+              <p style="text-align: justify;" class="font-x4"><b>Procedimientos y registros de calidad:</b> deben cubrir todos los procesos, incluidos los procedimientos para el control de documentos y registros.</p>
+              <br/>
+              <p style="text-align: justify;" class="font-x4"><b>Medical Device Master File:</b> este documento se refiere al registro maestro del dispositivo, así como a su documentación técnica.</p>
+            </div>
+            <br/>
+            <br/>
+            <div class="content">
+              <h2>3. ISO 13485 </h2>
+              <p style="text-align: justify;" class="font-x4">Se enfoca en el sistemas de gestión de calidad de dispositivos médicos, requisitos para fines reglamentarios, define la base de un sistema de gestión de la calidad para las organizaciones implicadas en el ciclo de vida de un dispositivo médico.</p>
+              <br/>
+            </div>
+            <br/>
+            <div class="content">
+              <h2>4. ISO 10993  </h2>
+              <p style="text-align: justify;" class="font-x4">Son una serie de estándares para evaluar la biocompatibilidad de los dispositivos médicos para gestionar el riesgo biológico.</p>
+              <br/>
+            </div>
+            <br/>
+            <div class="content">
+              <h2>5. ISO 14155 </h2>
+              <p style="text-align: justify;" class="font-x4">Esta norma se especifica un proceso que debe seguir el fabricante para identificar los peligros vinculados con los dispositivos médicos, incluyendo los dispositivos para Diagnóstico In Vitro (IVD), para estimar y evaluar los riesgos asociados, para controlar estos riesgos y para monitorear la eficacia de los controles.</p>
+              <br/>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <br/>
+      </div>
+      <!-- Requerimientos de Diseño -->
+      <button class="accordion"><h2 class="font-x2">2. Requerimientos de Diseño</h2></button>
+      <div class="panel">
+        <div class="panel-content">
+          <p class="font-x4"></p>
+        </div>
+          
+        <!-- Requerimientos Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.1 Requerimientos Funcionales</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+          <br/>
+          <div class="content">
+            <h2>Funcion principal</h2>
+            <li style="text-align: justify;" class="font-x4" type="circle">Diagnosticar retinopatía prematura mediante un software usando imágenes, de manera que no se necesita contar con un oftalmólogo para interpretar los resultados.</li>
+            <li style="text-align: justify;" class="font-x4" type="circle">El resultado del diagnóstico debe ser transmitido tanto al médico/hospital como a la familia del paciente a través de una aplicación.</li>
+            <li style="text-align: justify;" class="font-x4" type="circle">Contar con una base de datos para guardar las imágenes procesadas, así como para el funcionamiento de la red neuronal.</li>
+            <br/>
+          </div>
+          <br/>
+          <div class="content">
+            <h2>Performance</h2>
+            <p style="text-align: justify;" class="font-x4">Es fundamental que la toma de la imagen que será ingresada al sistema y el tiempo que demore el sistema en brindar el resultado sea lo más breve posible.</p>
+            <br/>
+            <p style="text-align: justify;" class="font-x4">El examen de fondo de ojo convencional demora entre 5 a 10 minutos, ya que es complicado mantener al bebé en una posición fija para que el oftalmólogo pueda brindar un diagnóstico. Además, hay que considerar que puede tardar unos segundos o incluso minutos, si no se cuenta con una conexión a internet estable, obtener el diagnóstico usando el sistema a desarrollar.</p>
+            <br/>
+            <p style="text-align: justify;" class="font-x4">Con el sistema, el tiempo que demora obtener una imagen será breve (será explicado más adelante).</p>
+            <li style="text-align: justify;" class="font-x4" type="circle">Tiempo aproximado de diagnóstico: no mayor a 5 minutos.</li>
+            <br/>
+          </div>
+          
+          <div class="content">
+            <h2>Señales</h2>
+            <p style="text-align: justify;" class="font-x4">Las señales de entrada: </p>
+            <li style="text-align: justify;" class="font-x4" type="circle">Se necesita una imagen del examen fondo de ojo para poder procesarla en el sistema. Esta imagen será capturada utilizando la cámara del celular y un dispositivo externo.</li>
+            <br/>
+            <p style="text-align: justify;" class="font-x4">Las señales de salida: </p>
+            <li style="text-align: justify;" class="font-x4" type="circle">Diagnóstico de la retinopatía prematura del infante evaluado, para saber si se necesita realizar algún tratamiento.</li>
+            <li style="text-align: justify;" class="font-x4" type="circle">Registro de imágenes procesadas y del diagnóstico, para poder evaluar la evolución del infante según se vaya tratando la enfermedad.</li>
+            <br/>
+          </div>
+          <div class="content">
+            <h2>Precisión</h2>
+            <p style="text-align: justify;" class="font-x4">La precisión con la cual un oftalmólogo diagnostica certeramente un paciente con retinopatía prematura es del 60% , con lo cual este sistema debe superar la precisión del diagnóstico.</p>
+            <p style="text-align: justify;" class="font-x4">Es necesario implementar un sistema con un porcentaje de acierto de aproximadamente el 80%.</p>
+            <br/>
+            
+          </div>
+          
+          </div>
+        </div>
+        <!-- Requerimientos No Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.2 Requerimientos No Funcionales</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <br/>
+            <div class="content">
+              <h2>Interfaz</h2>
+              <p style="text-align: justify;" class="font-x4">El sistema desarrollado debe tener una interfaz de fácil uso e intuitivo para la persona (no necesariamente un médico) que opera este sistema.</p>
+              <br/>
+            </div>
+            <div class="content">
+              <h2>Costo</h2>
+              <p style="text-align: justify;" class="font-x4">Un centro de salud, para contar con un oftalmólogo especialista que realice exámenes de fondo de ojo, estaría gastando alrededor de S/.5000 en promedio ( 1250 dólares aproximadamente) para contratarlo. No solo no se cuenta con suficientes oftalmólogos, sino que implican un gasto público elevado. 
+                El sistema debe ser económico para ser accesible por los diversos centros de salud y que les permita obtener un resultado de la evaluación realizada al infante.
+                </p>
+              <br/>
+            </div>
+            <div class="content">
+              <h2>Peso (del software)</h2>
+              <p style="text-align: justify;" class="font-x4">El software desarrollado no debe ser pesado, para que un celular pueda hacer uso de la aplicación en la que se diagnosticará utilizando la imagen del fondo de ojo y las redes neuronales.</p>
+              <br/>
+            </div>
+            
+          </div>
+        </div>
+        
+        </div>
+        <br/>
+        <br/>
+      </div>
+
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+    </div>
+    
+
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay row4" style="background-image:url('../images/Pagina-principal/Imagen-Contactanos.jpeg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h6 class="heading">Contáctanos</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+      <p class="nospace">Estudiantes de Ingeniería Biomédica</p>
+    </div>
+    <!-- ################################################################################################ -->
+    <div id="ctdetails" class="clear">
+      <ul class="nospace clear">
+        <li class="one_quarter first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> support@domain.com</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Saturday:</strong> 08.00am - 18.00pm</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span></div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <a id="backtotop" href="#top"><i class="fas far fa-life-ring"></i></a>
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+</div>
+<!-- JAVASCRIPTS -->
+
+
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+  /*Lista*/
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+</script>
+
+
+
+
+
+</body>
+</html>
