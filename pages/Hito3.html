@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--
+Template Name: Sislaf
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Discure | Hito3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<style type="text/css">
+/*Acordion*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 0px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.panel-content{
+  padding: 0 18px;
+
+}
+/* DEMO ONLY */
+.container .demo{text-align:center;}
+.container .demo div{padding:8px 0;}
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+/* DEMO ONLY */
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 25%;
+  height: 35px;
+  background-color: #FBAB45;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.text-in-progress-bar {
+  font-size: 19px;
+  padding-top: 2px !important;
+}
+
+/*Fin Acordion*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* lista*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../images/Pagina-principal/Imagen-Principal.png');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+          <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+      <div class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+          <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+          <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+          <li id="searchform">
+            <div>
+              <form action="#" method="post">
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search term&hellip;">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="../index.html">Discure</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><a href="../index.html">Página principal</a></li>
+          <li><a class="drop" href="Proyecto.html">Proyecto</a>
+            <ul>
+              <li><a class="drop" href="../pages/Caso-Clinico.html">Caso clínico</a>
+                <ul>
+                  <li><a href="../pages/Caso-Clinico.html">¿Qué es?</a></li>
+                  <li><a href="../pages/Caso-Clinico.html">Tratamiento</a></li>
+                  <li><a href="../pages/Proyecto.html">Proyecto</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/Hito1.html">Hito1</a></li>
+              <li><a href="../pages/Hito2.html">Hito2</a></li>
+              <li><a href="../pages/Hito3.html">Hito3</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="#">Contactanos</a>
+            <ul>
+              <li><a href="pages/gallery.html">PUCP</a></li>
+              <li><a href="pages/full-width.html">UPCH</a></li>
+              <li><a href="pages/sidebar-left.html">NOSOTROS</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Hito 3</h6>
+    <ul>
+      <li><a href="../index.html">Página principal</a></li>
+      <li><a href="../pages/Proyecto.html">Proyecto</a></li>
+      <li><a href="../pages/Hito1.html">Hito1</a></li>
+      <li><a href="../pages/Hito2.html">Hito2</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <div class="sectiontitle">
+        <p class="heading underline font-x3">Diseño</p>
+        <br/>
+        <br/>
+        <p class="heading">Hito 3</p>
+    </div>
+    <div class="content"> 
+      <!-- Requerimientos de Dise;o -->
+      <button class="accordion"><h2 class="font-x2">1. Requerimientos de Diseño</h2></button>
+      <div class="panel">
+              
+        <!-- Requerimientos Funcionales -->
+        <button class="accordion"><h2 class="font-x2">1.1 Requerimientos Funcionales</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+          <br/>
+          <div class="content">
+            <h2>Funcion principal</h2>
+            <li style="text-align: justify;" class="font-x4" type="circle">Diagnosticar retinopatía prematura mediante un software usando imágenes, de manera que no se necesita contar con un oftalmólogo para interpretar los resultados.</li>
+            <li style="text-align: justify;" class="font-x4" type="circle">El resultado del diagnóstico debe ser transmitido tanto al médico/hospital como a la familia del paciente a través de una aplicación.</li>
+            <li style="text-align: justify;" class="font-x4" type="circle">Contar con una base de datos para guardar las imágenes procesadas, así como para el funcionamiento de la red neuronal.</li>
+            <br/>
+          </div>
+          <br/>
+          <div class="content">
+            <h2>Performance</h2>
+            <p style="text-align: justify;" class="font-x4">Es fundamental que la toma de la imagen que será ingresada al sistema y el tiempo que demore el sistema en brindar el resultado sea lo más breve posible.</p>
+            <br/>
+            <p style="text-align: justify;" class="font-x4">El examen de fondo de ojo convencional demora entre 5 a 10 minutos, ya que es complicado mantener al bebé en una posición fija para que el oftalmólogo pueda brindar un diagnóstico. Además, hay que considerar que puede tardar unos segundos o incluso minutos, si no se cuenta con una conexión a internet estable, obtener el diagnóstico usando el sistema a desarrollar.</p>
+            <br/>
+            <p style="text-align: justify;" class="font-x4">Con el sistema, el tiempo que demora obtener una imagen será breve (será explicado más adelante).</p>
+            <li style="text-align: justify;" class="font-x4" type="circle">Tiempo aproximado de diagnóstico: no mayor a 5 minutos.</li>
+            <br/>
+          </div>
+          
+          <div class="content">
+            <h2>Señales</h2>
+            <p style="text-align: justify;" class="font-x4">Las señales de entrada: </p>
+            <li style="text-align: justify;" class="font-x4" type="circle">Se necesita una imagen del examen fondo de ojo para poder procesarla en el sistema. Esta imagen será capturada utilizando la cámara del celular y un dispositivo externo.</li>
+            <br/>
+            <p style="text-align: justify;" class="font-x4">Las señales de salida: </p>
+            <li style="text-align: justify;" class="font-x4" type="circle">Diagnóstico de la retinopatía prematura del infante evaluado, para saber si se necesita realizar algún tratamiento.</li>
+            <li style="text-align: justify;" class="font-x4" type="circle">Registro de imágenes procesadas y del diagnóstico, para poder evaluar la evolución del infante según se vaya tratando la enfermedad.</li>
+            <br/>
+          </div>
+          <div class="content">
+            <h2>Precisión</h2>
+            <p style="text-align: justify;" class="font-x4">La precisión con la cual un oftalmólogo diagnostica certeramente un paciente con retinopatía prematura es del 60% , con lo cual este sistema debe superar la precisión del diagnóstico.</p>
+            <p style="text-align: justify;" class="font-x4">Es necesario implementar un sistema con un porcentaje de acierto de aproximadamente el 80%.</p>
+            <br/>
+            
+          </div>
+          
+          </div>
+        </div>
+        <!-- Requerimientos No Funcionales -->
+        <button class="accordion"><h2 class="font-x2">1.2 Requerimientos No Funcionales</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <br/>
+            <div class="content">
+              <h2>Interfaz</h2>
+              <p style="text-align: justify;" class="font-x4">El sistema desarrollado debe tener una interfaz de fácil uso e intuitivo para la persona (no necesariamente un médico) que opera este sistema.</p>
+              <br/>
+            </div>
+            <div class="content">
+              <h2>Costo</h2>
+              <p style="text-align: justify;" class="font-x4">Un centro de salud, para contar con un oftalmólogo especialista que realice exámenes de fondo de ojo, estaría gastando alrededor de S/.5000 en promedio ( 1250 dólares aproximadamente) para contratarlo. No solo no se cuenta con suficientes oftalmólogos, sino que implican un gasto público elevado. 
+                El sistema debe ser económico para ser accesible por los diversos centros de salud y que les permita obtener un resultado de la evaluación realizada al infante.
+                </p>
+              <br/>
+            </div>
+            <div class="content">
+              <h2>Peso (del software)</h2>
+              <p style="text-align: justify;" class="font-x4">El software desarrollado no debe ser pesado, para que un celular pueda hacer uso de la aplicación en la que se diagnosticará utilizando la imagen del fondo de ojo y las redes neuronales.</p>
+              <br/>
+            </div>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <!-- Requerimientos de Dise;o -->
+      <button class="accordion"><h2 class="font-x2">2. Diseño Conceptual</h2></button>
+      <div class="panel">
+              
+        <!-- Requerimientos Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.1 Exigencias del sistema</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+          <br/>
+          <div class="content">
+            <p style="text-align: justify;" class="font-x4">Las exigencias del Sistema a desarrollar se muestran en la sigueinte iamgen, donde se explican sus exigencias y deseos.</p>
+            <br/>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/Exigencia del sistema.png" alt=""></p>
+          </div>
+          </div>
+        </div>
+
+        <!-- Requerimientos No Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.2 Esquema de Funciones</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/Esquema de Funciones.jpg" alt=""></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Requerimientos No Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.3 Conceptos de Solucion</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <div class="content">
+              <h2>Matrix Morfologica</h2>
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/Conceptos de Solucion.jpg" alt=""></p>
+            </div>
+            <br/>
+            <div class="content">
+              <h2>Concepto de Solucion 1</h2>
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/opcion 1.jpg" alt=""></p>
+            </div>
+            <br/>
+            <div class="content">
+              <h2>Concepto de Solucion 2</h2>
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/opcion 2.jpg" alt=""></p>
+            </div>
+            <br/>
+            <div class="content">
+              <h2>Concepto de Solucion 3</h2>
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/opcion 3.jpg" alt=""></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Requerimientos No Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.4 Analisis Tecnico</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/Tecnico.jpg" alt=""></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Requerimientos No Funcionales -->
+        <button class="accordion"><h2 class="font-x2">2.5 Analisis Economico</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/Economico.jpg" alt=""></p>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+
+
+      <!-- Solucion Optima -->
+      <button class="accordion"><h2 class="font-x2">3. Solucion Optima</h2></button>
+      <div class="panel"> 
+        <!-- solucion -->
+          <div class="content">
+            <br/>
+            <p style="text-align: justify;" class="font-x4">Tomando en consideración los resultados en la evaluación técnico-económica, la solución óptima es la número 2. Esta consiste en un 
+              sistema compuesto por una unidad de medición de la imagen del fondo de ojo y un aplicativo en Android donde se podrá insertar la imagen obtenida y obtener un diagnóstico si el 
+              paciente tiene retinopatía utilizando Deep Learning. Se realizarán mejoras a la solución 2: Aplicación en Android. Se identificó un cambio en el diseño luego de analizar las demás 
+              propuestas de solución.</p>
+              <br/>
+              <h2>CT6: Facilidad de Manejo de Algoritmos de Machine Learning</h2>
+              
+            <p style="text-align: justify;" class="font-x4">La puntuación para este criterio es 2, y si bien en el resto de soluciones la puntuación no es mejor, se puede mejorar hasta un 3 si es que se utiliza un algoritmo de código 
+              abierto y que se haya testeado al momento de ser exportado, pues así se evitaría manipular los archivos de deep learning al momento de tratar de exportarlos. Incluso algunos 
+              algoritmos cuentan con una demostración de su testeo en una página web local, y será esta la forma en la que se usará para facilitar su demostración.</p>
+            <p style="text-align: justify;" class="font-x4">Por otro lado, se presenta la interfaz básica de la aplicación del concepto de solución ganadora.</p>
+            <br/>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 3/Mockup.jpg" alt=""></p>
+          </div>
+
+        
+
+        </div>
+      </div>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+    </div>
+    
+
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay row4" style="background-image:url('../images/Pagina-principal/Imagen-Contactanos.jpeg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h6 class="heading">Contáctanos</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+      <p class="nospace">Estudiantes de Ingeniería Biomédica</p>
+    </div>
+    <!-- ################################################################################################ -->
+    <div id="ctdetails" class="clear">
+      <ul class="nospace clear">
+        <li class="one_quarter first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> support@domain.com</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Saturday:</strong> 08.00am - 18.00pm</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span></div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <a id="backtotop" href="#top"><i class="fas far fa-life-ring"></i></a>
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+</div>
+<!-- JAVASCRIPTS -->
+
+
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+  /*Lista*/
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+</script>
+
+
+
+
+
+</body>
+</html>
