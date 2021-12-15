@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--
+Template Name: Sislaf
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Discure | Hito3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<style type="text/css">
+/*Acordion*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 0px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.panel-content{
+  padding: 0 18px;
+
+}
+/* DEMO ONLY */
+.container .demo{text-align:center;}
+.container .demo div{padding:8px 0;}
+.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
+.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
+@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
+/* DEMO ONLY */
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 25%;
+  height: 35px;
+  background-color: #FBAB45;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.text-in-progress-bar {
+  font-size: 19px;
+  padding-top: 2px !important;
+}
+
+/*Fin Acordion*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* lista*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../images/Pagina-principal/Imagen-Principal.png');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+          <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+      <div class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>
+          <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+          <li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>
+          <li id="searchform">
+            <div>
+              <form action="#" method="post">
+                <fieldset>
+                  <legend>Quick Search:</legend>
+                  <input type="text" placeholder="Enter search term&hellip;">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="../index.html">Discure</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><a href="../index.html">Página principal</a></li>
+          <li><a class="drop" href="Proyecto.html">Proyecto</a>
+            <ul>
+              <li><a class="drop" href="../pages/Caso-Clinico.html">Caso clínico</a>
+                <ul>
+                  <li><a href="../pages/Caso-Clinico.html">¿Qué es?</a></li>
+                  <li><a href="../pages/Caso-Clinico.html">Tratamiento</a></li>
+                  <li><a href="../pages/Proyecto.html">Proyecto</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/Hito1.html">Hito1</a></li>
+              <li><a href="../pages/Hito2.html">Hito2</a></li>
+              <li><a href="../pages/Hito3.html">Hito3</a></li>
+              <li><a href="../pages/Hito4.html">Hito4</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="#">Contactanos</a>
+            <ul>
+              <li><a href="pages/gallery.html">PUCP</a></li>
+              <li><a href="pages/full-width.html">UPCH</a></li>
+              <li><a href="pages/sidebar-left.html">NOSOTROS</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Hito 3</h6>
+    <ul>
+      <li><a href="../index.html">Página principal</a></li>
+      <li><a href="../pages/Proyecto.html">Proyecto</a></li>
+      <li><a href="../pages/Hito1.html">Hito1</a></li>
+      <li><a href="../pages/Hito2.html">Hito2</a></li>
+      <li><a href="../pages/Hito3.html">Hito3</a></li>
+      <li><a href="../pages/Hito4.html">Hito4</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <div class="sectiontitle">
+        <p class="heading underline font-x3">PROTOTIPO DE BAJA RESOLUCIÓN</p>
+        <br/>
+        <br/>
+        <p class="heading">Hito 4</p>
+    </div>
+    <div class="content"> 
+      <!-- Dise;o de componentes -->
+      <button class="accordion"><h2 class="font-x2">1. Diseño de componentes de la solucion</h2></button>
+      <div class="panel">
+              
+        <!-- Aplicativo movil -->
+        <button class="accordion"><h2 class="font-x2">1.1 Aplicativo movil</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+          <br/>
+          <div class="content">
+            <p style="text-align: justify;" class="font-x4" >Para el aplicativo móvil se utilizó el programa Android Studio, con el lenguaje de programación kotlin para la creación de las siguientes secciones:</p>
+            <br/>
+            <br/>
+
+            <button class="accordion"><p style="text-align: justify;" class="font-x4"><b>Main Activity:</b>  esta sección se realizó el código para crear el perfil del médico que realizará el examen para determinar el diagnóstico del prematuro.</p></button>
+            <div class="panel">
+              <div class="panel-content">
+                <div class="content">
+                  <script src="https://gist.github.com/LUIS-LOAYZA/5f3fae7eccde0e013c770b0231aa9e1e.js"></script>
+                </div>
+              </div>
+            </div>
+            <button class="accordion"><p style="text-align: justify;" class="font-x4"><b>Sign In Activity:</b> En esta sección se encuentra el código para el  inicio de sesión por el médico a cargo.</p></button>
+            <div class="panel">
+              <div class="panel-content">
+                <div class="content">
+                  <script src="https://gist.github.com/LUIS-LOAYZA/45c0ef53e2a9f8edbddb43599fc863df.js"></script>
+                </div>
+              </div>
+            </div>
+            <button class="accordion"><p style="text-align: justify;" class="font-x4"><b>Sign up Activity:</b> En esta sección se realizó el código para registrar un nuevo perfil de médico.</p></button>
+            <div class="panel">
+              <div class="panel-content">
+                <div class="content">
+                  <script src="https://gist.github.com/LUIS-LOAYZA/4b22d7635973bde799a7e17b9dff3f62.js"></script>
+                </div>
+              </div>
+            </div>
+            <button class="accordion"><p style="text-align: justify;" class="font-x4"><b>Upload multiple files:</b> El siguiente código se realizó para que el usuario suba imágenes del examen de fondo de ojo del paciente , las cuales serán analizadas por el algoritmo de reconocimiento y se brindará un diagnóstico./p></button>
+            <div class="panel">
+              <div class="panel-content">
+                <div class="content">
+                  <script src="https://gist.github.com/LUIS-LOAYZA/9d9840a715139be5b8bfd873306882fc.js"></script>
+                </div>
+              </div>
+            </div>
+            <button class="accordion"><p style="text-align: justify;" class="font-x4"><b>User profile Activity:</b> En este código se mostrará el perfil del paciente y la opción de subir imágen de su retina.</p></button>
+            <div class="panel">
+              <div class="panel-content">
+                <div class="content">
+                  <script src="https://gist.github.com/LUIS-LOAYZA/2a6b2ba98ea3001d44eb5e97a680173c.js"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+          
+          </div>
+        </div>
+        
+
+        <!--Algoritmo de reconocimiento-->
+        <button class="accordion"><h2 class="font-x2">1.2 Algoritmo de Diagnostico de retinopatía</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <br/>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">Para el algoritmo de diagnóstico se buscó modelos de clasificación de imágenes de retinopatía mediante Deep learning, se hallaron numerosos algoritmos, en esta oportunidad utilizamos un modelo de código abierto publicado en Git Hub que cuenta con el modelo publicado, este modelo cuenta con la arquitectura de la red neuronal, cuenta con los pesos que fueron recopilados por un entrenamiento previo y cuenta con la optimización del modelo, esto permite que podamos utilizarlo sin un previo entrenamiento lo que resuelve el limitante de tener un set de datos para el entrenamiento, una tarjeta gráfica potente para procesar este entrenamiento y el tiempo del entrenamiento que en algunos casos pueden llegar a numerosos días y semanas.</p>
+              <br/>
+            </div>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">El entorno de desarrollo que se utilizó para testear el algoritmo fue Google colab, ya que nos permite utilizar el código y hacer modificaciones colaborativamente en tiempo real, también no requiere la instalación de frameworks ni uso de GPU, ya que este procesa el algoritmo en la nube.</p>
+              <br/>
+            </div>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">El modelo implementa el aprendizaje por transferencia, utilizando un modelo pre entrenado de mobileNetV2, se uso 4 capas ocultas adicionales para mejorar los resultados de salida, el algoritmo fue optimizado mediante el método Adam, el set de datos que se utilizó para el entrenamiento del algoritmo fue uno publicado en Kaggle, este utiliza más de 35 000 imágenes de fondo de ojo, clasificadas en: no retinopatía, indicios de retinopatía, retinopatía moderada, retinopatía proliferativa y retinopatía severa.</p>
+              <br/>
+            </div>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/Disen. algoritmo.jpg" alt=""></p>
+          </div>
+        </div>
+        <br/>
+        </div>
+      </div>
+
+
+      <!-- Prototipado -->
+      <button class="accordion"><h2 class="font-x2">2. Prototipado</h2></button>
+      <div class="panel">
+              
+        <!-- Aplicativo movil -->
+        <button class="accordion"><h2 class="font-x2">2.1 Aplicativo movil</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+          <br/>
+          <div class="content">
+            <h2>Inicio y registro del medico:</h2>
+            <p style="text-align: justify;" class="font-x4">En las imágenes (a) y (b) se muestran las secciones para registrar una nueva cuenta, la cual se guardará en la base de datos de Firebase, como se observa en la imagen (d). Finalmente, en la imagen (c) se señala  el inicio de sesión del aplicativo móvil.              </p>
+            <br/>
+            <br/>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoApp1.jpg" alt=""></p>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoApp2.jpg" alt=""></p>
+            <br/>
+            <br/>
+          </div>
+          <div class="content">
+            <h2>Perfil del médico y paciente:</h2>
+            <p style="text-align: justify;" class="font-x4">En las imagen (a) se observa el perfil del médico, en la cual puede ingresar su nombre, asimismo agregar pacientes, lo que dirige a la imagen (b), en la que vemos la opción de ingresar el nombre del paciente, además de la opción de subir imagen, que redirigirá a la imagen (c), donde te pide ingresar una imagen de los archivos del dispositivo como se muestra en (d).Finalmente, los archivos se almacenan en la base de datos Firebase, como se observa en (e) y (f).</p>
+            <br/>
+            <br/>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoApp3.jpg" alt=""></p>
+          </div>
+          <div class="content">
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoApp4.jpg" alt=""></p>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoApp5.jpg" alt=""></p>
+          </div>
+          </div>
+        </div>
+
+        <!-- Algoritmo de reconocimiento -->
+        <button class="accordion"><h2 class="font-x2">2.2 Algoritmo de Diagnostico de retinopatía</h2></button>
+        <div class="panel">
+          <div class="panel-content">
+            <p class="font-x4"></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">El algoritmo a usar tiene como entradas una imagen expresada en un array de números, por lo que se debe adaptar la imagen de entrada, esta debe de redimensionarse en una imagen de 224 x 224 píxeles, luego debe convertirse en un arreglo 224x224x3 mediante la función .img_to_array(), a cada valor del arreglo se debe dividir entre 255, lo cual permite que los valores vayas desde el 0 hasta el 1, ya con estos pasos se puede ingresar estos datos a la función del modelo.</p>
+              <br/>
+            </div>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoAlgorit1.jpg" alt=""></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">Se debe subir el modelo en una capeta para poder importarlo al programa, este modelo tiene como nombre “retinopathy_model.h5”, que se lee mediante la función load_model() de la librería de tensorflow.keras.models.</p>
+              <br/>
+            </div>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoAlgorit2.jpg" alt=""></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">Luego mediante la función model.predict(arreglo), se ingresa la imagen convertida en arreglo y el programa da como salida un arreglo de 5 números, los cuales representan el porcentaje de probabilidad de [no retinopatía, indicios de retinopatía, retinopatía moderada, retinopatía proliferativa y retinopatía severa] respectivamente</p>
+              <br/>
+            </div>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoAlgorit3.jpg" alt=""></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">La posición del número con mayor valor nos brinda el diagnóstico resultante.</p>
+              <br/>
+            </div>
+            <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/PrototipoAlgorit4.jpg" alt=""></p>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">Por lo que al final tenemos un sistema que convierte una imagen de entrada en un diagnóstico de la fase de retinopatía en la que se encuentra.</p>
+              <br/>
+            </div>
+            <div class="content">
+              <br/>
+              <p style="text-align: justify;" class="font-x4">En el presente trabajo se puede cambiar el algoritmo y adaptar el programa con sus especificaciones, como por ejemplo la resolución de la imagen , se recomienda entrenar un modelo de Deep learning entrenado con un set de datos de retinopatía del prematuro para una mejor precisión de los datos de salida, en el presente trabajo no se incluyó la unión de la aplicación móvil y el algoritmo de diagnóstico, se recomienda usar herramientas del framework tensorflowjs y tensorflowlite para poder exportar este programa tanto a una página web como en la propia aplicación en Android, de la misma manera se recomienda usar servicios de HTTP y tensorflow serving si es que el programa añadido o es muy pesado o no es compatible con los frameworks antes mencionados, esto para que el programa se ejecute en un servidor, reciba los datos de entrada de la aplicación y mande los datos de salida a la aplicación, este método requeriría conección a internet para el uso del algoritmo en la aplicación web.</p>
+              <br/>
+            </div>
+          </div>
+        </div>
+        <br/>
+        </div>
+      </div>
+
+
+      <!-- Protocolo de uso -->
+      <button class="accordion"><h2 class="font-x2">3. Propuesta de protocolo de uso</h2></button>
+      <div class="panel"> 
+        <!-- solucion -->
+          <div class="content">
+            <br/>
+            <p style="text-align: justify;" class="font-x4">Una vez implementado este sistema, teniendo en cuenta que el algoritmo de diagnóstico está enlazado con la aplicación, y siguiendo la Norma Técnica de Salud de atención del recién nacido Pretérmino con Riesgo de retinopatía prematura en el Perú [25], el protocolo que se tiene que seguir para su uso es el siguiente:</p>
+              <br/>
+              <h2>Antes de usar el sistema</h2> 
+            <p style="text-align: justify;" class="font-x4">Se debe asegurar que el recién nacido neonato que presente riesgo de padecer retinopatía se encuentre sin ningún problema y estable para poder ser evaluado.El médico que vaya a realizar el diagnóstico mediante este sistema debe de contar con un accesorio como el D-Eye [31] que se acople a su teléfono móvil para poder obtener la imagen de fondo de ojo de manera sencilla.El médico debe estar registrado como médico certificado de su centro de salud en la aplicación DISCURE desarrollado en este proyecto.</p>
+            <br/>
+            <br/>
+              <h2>Protocolo de uso</h2> 
+            <p style="text-align: justify;" class="font-x4">El sistema debe de usarse en el tamizaje realizado a los neonatos antes de ser dado de alta de la Unidad de Cuidados Intensivos (UCI). Los pasos a seguir se indican a continuación:</p>
+            <br/>
+            <div class="content">
+              
+              <li style="text-align: justify;" class="font-x4" type="circle">Se ingresa al neonato para el tamizaje correspondiente.</li>
+              <li style="text-align: justify;" class="font-x4" type="circle">Haciendo uso del accesorio del teléfono móvil, el médico encargado de realizar la evaluación captura una imagen de la retina.</li>
+              <li style="text-align: justify;" class="font-x4" type="circle">El médico encargado ingresa a la aplicación DISCURE e inicia sesión.</li>
+              <li style="text-align: justify;" class="font-x4" type="circle">Se ingresa un nuevo paciente, y se completa con los datos solicitados del neonato que se está evaluando.</li>
+              <li style="text-align: justify;" class="font-x4" type="circle">Se inserta la imagen de retina anteriormente obtenida a la aplicación, donde se realizará el diagnóstico automatizado usando el algoritmo de diagnóstico de retinopatía.</li>
+              <br/>
+              <p style="text-align: center;"><img class="img borderedbox inspace-5"  src="../images/Hito 4/protocolo de uso.png" alt=""></p>
+            </div>
+            <br/>
+          </div>
+        </div>
+        <!-- Hito 4 -->
+      <button class="accordion"><h2 class="font-x2">4. Informe Final</h2></button>
+      <div class="panel"> 
+        <!-- solucion -->
+          <div class="content">
+            <iframe src="../images/Hito 4/Informe Hitos.pdf" width="1150" height="700" style="margin: 0px 0px 0px 0px;" target="_self" scrolling="auto" frameborder="1" transparency=""> </iframe>
+            <br/>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+    </div>
+    
+
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay row4" style="background-image:url('../images/Pagina-principal/Imagen-Contactanos.jpeg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h6 class="heading">Contáctanos</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+      <p class="nospace">Estudiantes de Ingeniería Biomédica</p>
+    </div>
+    <!-- ################################################################################################ -->
+    <div id="ctdetails" class="clear">
+      <ul class="nospace clear">
+        <li class="one_quarter first">
+          <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> support@domain.com</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday - Saturday:</strong> 08.00am - 18.00pm</span></div>
+        </li>
+        <li class="one_quarter">
+          <div class="block clear"><a href="#"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span></div>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+  <a id="backtotop" href="#top"><i class="fas far fa-life-ring"></i></a>
+  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+</div>
+<!-- JAVASCRIPTS -->
+
+
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+  /*Lista*/
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+</script>
+
+
+
+
+
+</body>
+</html>
